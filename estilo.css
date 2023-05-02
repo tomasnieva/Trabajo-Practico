@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/sesame-futura');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sesame Futura', sans-serif;
+}
+
+/* propiedades base */
+
+button{
+    background-color: white;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 10px;
+    transition: background .3s, transform .2s;
+
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 380px;
+    border-radius: 15px;
+}
+
+/* clases */
+
+.imagen{
+    margin: 40px 40px 60px 50px;
+}
+
+.menuPrincipal{
+    margin: 40px 50px 60px 40px;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 15px;
+    width: 380px;
+}
+.svg{
+    padding: 10px 25px 10px 25px;
+    width: 30px;
+}
+
+.parrafo{
+    display: inline-block;
+    position: relative;
+}
+
+.cont-svg{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.email-mobile{
+    text-align: center;
+    color: rgb(182, 182, 182);
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    margin: 20px;
+}
+
+.email{
+    padding: 12px 40px 12px 40px;
+}
+
+.cont-parrafo{
+    text-align: center;
+    color: rgb(182, 182, 182);
+}
+
+
+/* clases con pseudo clases */
+
+.botones:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 166, 0);
+    border-color: #ffffff;
+    color: white;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+    border-color: #fc7a00;
+}
+
+    
+.parrafo::after, .parrafo::before{
+    content:"";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+.parrafo::before{
+    left:-105px;
+}
+
+.parrafo::after{
+    right: -105px;
+}
